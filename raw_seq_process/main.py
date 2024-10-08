@@ -118,7 +118,6 @@ if __name__ == '__main__':
     parser.add_argument('-l', '--library', help='gRNA library.')
     args = parser.parse_args()
     
-    ## ------- 对输入文件执行fastp和seqtk处理，得到seqtk_out ---------
     
     if not os.path.exists(args.output_path):
         os.makedirs(args.output_path)
